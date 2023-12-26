@@ -12,15 +12,21 @@ window.addEventListener(`load`, () => {
   const userPhoneNumberSelector = document.querySelector(`#user-phone-number`);
   userPhoneNumberSelector.innerHTML = getSearchURL(`ph`);
 
+  const progressLine = document.querySelector(`#progress-line`);
   const verificationInputSubmitBtn = document.querySelector(
     `#verification-input-submit-btn`
   );
   let minutes = 2;
   let seconds = 0;
+  let secondVal = minutes * 60 + seconds;
+  let counterVal = 0;
   verificationInputSubmitBtn.innerHTML = `${
     String(minutes).length > 1 ? minutes : `0${minutes}`
   } : ${String(seconds).length > 1 ? seconds : `0${seconds}`}`;
   let timer = setInterval(() => {
+    counterVal = counterVal + 1;
+    let progressPercent = (counterVal / secondVal) * 100;
+    progressLine.style = `width: ${progressPercent}%;`;
     if (seconds === 0) {
       seconds = 60;
       minutes -= 1;
@@ -85,6 +91,7 @@ window.addEventListener(`load`, () => {
         verificationInputSubmitBtn.classList.add(`text-gray-900`);
         verificationInputSubmitBtn.removeAttribute(`disabled`);
         verificationInputSubmitBtn.innerHTML = ` تایید `;
+        progressLine.style = `width: 100%;`;
       }
     });
   });
