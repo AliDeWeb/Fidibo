@@ -35,3 +35,8 @@ phoneNumberInputSelector.addEventListener(`keyup`, () => {
     phoneNumberInputSubmitBtn.classList.add(`bg-[#444749]`);
   }
 });
+
+phoneNumberInputSubmitBtn.addEventListener(`click`, (e) => {
+  e.preventDefault();
+  location.href = `login_validation.html?ph=${phoneNumberInputSelector.value.trim()}`;
+});

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود</title>
+    <link rel="icon" href="./files/imgs/favicon.ico" />
+    <link rel="stylesheet" href="./styles/login_validation.css" />
+  </head>
+  <body
+    class="bg-[#1C2028] md:bg-[#040810] h-screen flex flex-col justify-between pb-6 pt-10"
+  >
+    <svg class="hidden">
+      <symbol id="instagram-logo" viewBox="0 0 16 16" fill="#8f9193">
+        <g clip-path="url(#:r5:)">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M7.77188 0C8.81088 0.0371094 9.88698 0.0371094 10.926 0.0742149C11.8537 0.111321 12.7071 0.259749 13.5235 0.742138C14.5625 1.37296 15.1933 2.30063 15.4159 3.48805C15.5273 4.19308 15.5644 4.93521 15.6015 5.64025C15.6386 7.19874 15.6015 8.75723 15.6015 10.3157C15.6015 11.1321 15.5644 11.9484 15.3046 12.7277C14.7851 14.249 13.709 15.1767 12.1505 15.4736C11.4455 15.622 10.7033 15.622 9.99831 15.6591C8.4398 15.6962 6.91841 15.6591 5.35991 15.6591C4.54356 15.6591 3.7272 15.622 2.94796 15.3623C1.42656 14.8428 0.498884 13.7667 0.202026 12.2082C0.0536001 11.5031 0.0536001 10.761 0.0164926 10.056C-0.0206158 8.49748 0.0164926 6.93899 0.0164926 5.3805C0.0164926 4.56415 0.0536001 3.7478 0.313349 2.96855C0.83285 1.44717 1.90895 0.5195 3.46745 0.222643C4.17249 0.0742197 4.91463 0.0742197 5.61967 0.0371094C6.3247 0 7.02973 0 7.77188 0ZM14.1914 7.68113C14.1914 7.68113 14.1543 7.68113 14.1914 7.68113C14.1543 7.05031 14.1543 6.4566 14.1543 5.82578C14.1543 5.23208 14.1172 4.63836 14.043 4.04465C13.8946 2.7088 13.1153 1.81824 11.8166 1.55849C11.1486 1.41006 10.4065 1.41006 9.73855 1.41006C8.4027 1.37296 7.10395 1.37296 5.7681 1.41006C5.10017 1.41006 4.43224 1.44717 3.80142 1.55849C2.6882 1.74402 1.90895 2.37484 1.57499 3.48805C1.46367 3.85912 1.42656 4.23019 1.38946 4.60125C1.35235 6.01132 1.35235 7.42138 1.35235 8.83144C1.35235 9.72201 1.38946 10.6497 1.46367 11.5402C1.57499 12.8761 2.39135 13.8038 3.72721 14.0264C4.39513 14.1377 5.10017 14.1748 5.8052 14.1748C7.10395 14.2119 8.4027 14.1748 9.73855 14.1748C10.3323 14.1748 10.926 14.1377 11.5197 14.0635C12.0763 14.0264 12.5958 13.8409 13.0411 13.4698C13.7832 12.8761 14.043 12.0968 14.0801 11.2063C14.1543 10.0931 14.1543 8.90565 14.1914 7.68113Z"
+            fill="var(--second-icon-color)"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M11.7808 7.82979C11.7808 10.0562 9.99962 11.8373 7.7732 11.8373C5.54677 11.8373 3.76562 10.0562 3.76562 7.79269C3.76562 5.60338 5.58387 3.82227 7.8103 3.82227C9.99962 3.82227 11.7808 5.60338 11.7808 7.82979ZM7.7732 10.4273C9.18326 10.4273 10.3707 9.23984 10.3707 7.82979C10.3707 6.41973 9.18326 5.23232 7.7732 5.23232C6.32602 5.23232 5.17569 6.41973 5.17569 7.82979C5.13859 9.23984 6.32602 10.4273 7.7732 10.4273Z"
+            fill="var(--second-icon-color)"
+          ></path>
+          <path
+            d="M12.8575 3.63666C12.8575 4.15616 12.4493 4.60145 11.9298 4.60145C11.4103 4.60145 10.9651 4.15616 11.0022 3.63666C11.0022 3.11716 11.4103 2.70898 11.9298 2.70898C12.4493 2.70898 12.8575 3.11716 12.8575 3.63666Z"
+            fill="var(--second-icon-color)"
+          ></path>
+        </g>
+        <defs>
+          <clipPath id=":r5:">
+            <rect
+              width="15.618"
+              height="15.6756"
+              fill="var(--solid-light)"
+            ></rect>
+          </clipPath>
+        </defs>
+      </symbol>
+      <symbol id="linkedin-logo" viewBox="0 0 16 15" fill="#8f9193">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M15.618 9.13694V14.9042H12.2502V9.51581C12.2502 8.16871 11.7871 7.24258 10.5663 7.24258C9.6402 7.24258 9.09294 7.87404 8.84036 8.46339C8.75616 8.67387 8.71407 8.96855 8.71407 9.26323V14.9042H5.34632C5.34632 14.9042 5.38841 5.7692 5.34632 4.84308H8.71407V6.27436C8.71407 6.27436 8.71407 6.31645 8.67197 6.31645H8.71407V6.27436C9.17714 5.60082 9.93488 4.59049 11.745 4.59049C13.9341 4.59049 15.618 6.06388 15.618 9.13694ZM1.89436 0.00195312C0.757744 0.00195312 0 0.759693 0 1.72792C0 2.69614 0.715649 3.45389 1.85226 3.45389H1.89436C3.07308 3.45389 3.78873 2.69614 3.78873 1.72792C3.74663 0.759693 3.03098 0.00195312 1.89436 0.00195312ZM0.168383 14.9042H3.49405V4.84308H0.168383V14.9042Z"
+          fill="var(--second-icon-color)"
+        ></path>
+      </symbol>
+      <symbol id="twitter-logo" viewBox="0 0 23 18" fill="#8f9193">
+        <path
+          d="M6.82692 14.032C4.42308 13.9378 2.98077 12.241 2.5 10.9213C3.17308 11.0156 3.84615 11.0156 4.51923 10.827C4.51923 10.827 4.51923 10.827 4.61539 10.827C3.36539 10.5442 2.30769 9.88438 1.63462 8.7532C1.15385 7.99908 0.961538 7.24496 0.961538 6.30231C1.63462 6.67937 2.30769 6.8679 2.98077 6.8679C2.01923 6.20804 1.34615 5.2654 1.05769 4.13422C0.769231 3.00304 0.961539 1.87186 1.53846 0.834944C4.03846 3.75716 7.21154 5.2654 11.0577 5.54819C11.0577 5.35966 10.9615 5.17113 10.9615 5.07687C10.8654 4.03995 11.0577 3.00304 11.6346 2.15465C12.4038 1.02347 13.4615 0.36362 14.8077 0.0808247C16.3462 -0.20197 17.6923 0.269354 18.8462 1.30627C18.9423 1.40053 18.9423 1.40053 19.1346 1.40053C20.0962 1.212 20.9615 0.834943 21.8269 0.363619C21.8269 0.363619 21.8269 0.363619 21.9231 0.363619C21.5385 1.40053 20.8654 2.24892 19.9038 2.81451C20.7692 2.72024 21.6346 2.53171 22.5 2.15465C22.3077 2.34318 22.1154 2.62598 21.9231 2.81451C21.4423 3.3801 20.8654 3.94569 20.2885 4.41701C20.1923 4.41701 20.1923 4.51128 20.1923 4.60554C20.1923 5.2654 20.1923 5.92525 20.0962 6.5851C19.9038 7.99908 19.5192 9.31879 18.9423 10.6385C18.2692 11.9582 17.5 13.1837 16.4423 14.2206C14.7115 16.0116 12.5962 17.1428 10.0962 17.7084C9.23077 17.8969 8.36539 17.9912 7.5 17.9912C4.80769 18.0854 2.40385 17.4256 0.0961542 16.0116C0.0961542 16.0116 0 16.0116 0 15.9173C1.63462 16.1059 3.17308 15.9173 4.61539 15.2575C5.48077 14.9747 6.15385 14.5034 6.82692 14.032Z"
+          fill="var(--second-icon-color)"
+        ></path>
+      </symbol>
+      <symbol id="login-box-icon" viewBox="0 0 48 48" fill="#176E77">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M7.23438 9C6.68209 9 6.23438 9.44772 6.23438 10V42C6.23438 42.5523 6.68209 43 7.23438 43H26.8344C27.3867 43 27.8344 42.5523 27.8344 42V29.4002H29.8344V42C29.8344 43.6569 28.4912 45 26.8344 45H7.23438C5.57752 45 4.23438 43.6569 4.23438 42V10C4.23438 8.34315 5.57752 7 7.23438 7H21.5844V9H7.23438Z"
+          fill="#176E77"
+        ></path>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M13.1328 37.9996C13.1328 37.5026 13.5358 37.0996 14.0328 37.0996H20.0328C20.5299 37.0996 20.9328 37.5026 20.9328 37.9996C20.9328 38.4967 20.5299 38.8996 20.0328 38.8996H14.0328C13.5358 38.8996 13.1328 38.4967 13.1328 37.9996Z"
+          fill="var(--first-color)"
+        ></path>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M25.7794 42.063H8.28906C7.73678 42.063 7.28906 41.6153 7.28906 41.063V11.2637C7.28906 10.7114 7.73678 10.2637 8.28906 10.2637H16.2084H19.264H20.7919H25.7794C26.3316 10.2637 26.7794 10.7114 26.7794 11.2637V29.1668V30.1382V34.1132V41.063C26.7794 41.6153 26.3316 42.063 25.7794 42.063ZM14.0341 35.8993C12.8743 35.8993 11.9341 36.8395 11.9341 37.9993C11.9341 39.1591 12.8743 40.0993 14.0341 40.0993H20.0341C21.1939 40.0993 22.1341 39.1591 22.1341 37.9993C22.1341 36.8395 21.1939 35.8993 20.0341 35.8993H14.0341ZM13.1341 37.9993C13.1341 37.5023 13.537 37.0993 14.0341 37.0993H20.0341C20.5311 37.0993 20.9341 37.5023 20.9341 37.9993C20.9341 38.4964 20.5311 38.8993 20.0341 38.8993H14.0341C13.537 38.8993 13.1341 38.4964 13.1341 37.9993Z"
+          fill="#176E77"
+          fill-opacity="0.25"
+        ></path>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M17.6484 16.7778C17.6484 9.72083 23.2716 4 30.208 4C37.1445 4 42.7676 9.72083 42.7676 16.7778C42.7676 23.8348 37.1445 29.5557 30.208 29.5557C28.2189 29.5557 26.3353 29.0845 24.6616 28.2451H19.9027C19.3691 28.2451 18.9366 27.8051 18.9366 27.2622V22.4207C18.1116 20.7179 17.6484 18.8016 17.6484 16.7778Z"
+          fill="none"
+        ></path>
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M30.208 4.75C23.6979 4.75 18.3984 10.1228 18.3984 16.7778C18.3984 18.6862 18.835 20.4909 19.6115 22.0937C19.6609 22.1956 19.6866 22.3074 19.6866 22.4207V27.2622C19.6866 27.4031 19.7955 27.4951 19.9027 27.4951H24.6616C24.7783 27.4951 24.8934 27.5224 24.9978 27.5747C26.5698 28.3631 28.3386 28.8057 30.208 28.8057C36.7181 28.8057 42.0176 23.4329 42.0176 16.7778C42.0176 10.1228 36.7181 4.75 30.208 4.75ZM16.8984 16.7778C16.8984 9.31885 22.8452 3.25 30.208 3.25C37.5708 3.25 43.5176 9.31885 43.5176 16.7778C43.5176 24.2368 37.5708 30.3057 30.208 30.3057C28.1628 30.3057 26.2215 29.8356 24.4868 28.9951H19.9027C18.9428 28.9951 18.1866 28.207 18.1866 27.2622V22.5902C17.3601 20.8271 16.8984 18.8549 16.8984 16.7778Z"
+          fill="#fff"
+        ></path>
+        <circle cx="25.0312" cy="16.7773" r="1.5" fill="#fff"></circle>
+        <circle cx="30.2109" cy="16.7773" r="1.5" fill="#fff"></circle>
+        <circle cx="35.3828" cy="16.7773" r="1.5" fill="#fff"></circle>
+      </symbol>
+      <symbol id="arrow-left" viewBox="0 0 24 24" fill="#fff">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M11.2118 4.56318C11.5047 4.85607 11.5047 5.33094 11.2118 5.62384L5.57808 11.2575L20.263 11.2575C20.6772 11.2575 21.013 11.5933 21.013 12.0075C21.013 12.4217 20.6772 12.7575 20.263 12.7575L5.57834 12.7575L11.2118 18.3913C11.5047 18.6842 11.5047 19.1591 11.2118 19.4519C10.9189 19.7448 10.444 19.7448 10.1511 19.4519L3.23723 12.5377C2.94435 12.2448 2.94436 11.7699 3.23725 11.477L10.1511 4.56318C10.444 4.27028 10.9189 4.27028 11.2118 4.56318Z"
+          fill="var(--first-icon-color)"
+        ></path>
+      </symbol>
+    </svg>
+    <header class="hidden md:block">
+      <div class="container">
+        <div class="flex justify-center items-center">
+          <h1 class="w-[130px] h-[41px]">
+            <img
+              src="./files/imgs/Fidibo-logo.png"
+              alt="Fidibo-logo"
+              class="size-full"
+            />
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="h-screen md:h-auto">
+      <div class="container h-full md:h-auto">
+        <div class="flex justify-center items-center h-full md:h-auto">
+          <form
+            class="md:w-[424px] md:h-[494px] flex flex-col justify-center items-start bg-[#1C2028] rounded-lg py-[42px] px-8 h-full w-full"
+          >
+            <div class="mb-5 cursor-pointer" id="back-icon">
+              <svg class="size-6 rotate-180">
+                <use href="#arrow-left"></use>
+              </svg>
+            </div>
+            <div class="size-12 mb-4">
+              <svg class="size-full"><use href="#login-box-icon"></use></svg>
+            </div>
+            <div class="mb-8">
+              <h2 class="text-[#DCE0E8] text-lg font-extraboldFanum mb-2">
+                تایید شماره تلفن
+              </h2>
+              <p class="text-[#fdfdfd9f] text-sm font-regularFanum">
+                کدی را که به شمارۀ
+                <span id="user-phone-number">
+                  <!-- Data Will Load By JS -->
+                </span>
+                فرستادیم اینجا بنویس:
+              </p>
+            </div>
+            <div
+              class="flex flex-row-reverse items-center justify-center w-full gap-3"
+            >
+              <!-- Verification Code Input -->
+
+              <div class="w-1/6 flex justify-center">
+                <input
+                  type="text"
+                  class="validation-code-input text-direction-ltr bg-transparent border border-solid border-[#c5c7c99a] focus:border-2 focus:border-[#176E77] rounded-lg outline-none font-mediumFanum text-[#c5c7c9] flex items-center justify-center text-center size-10 text-lg md:text-2xl md:size-[60px]"
+                  maxlength="1"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="w-1/6 flex justify-center">
+                <input
+                  type="text"
+                  class="validation-code-input text-direction-ltr bg-transparent border border-solid border-[#c5c7c99a] focus:border-2 focus:border-[#176E77] rounded-lg outline-none font-mediumFanum text-[#c5c7c9] flex items-center justify-center text-center size-10 text-lg md:text-2xl md:size-[60px]"
+                  maxlength="1"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="w-1/6 flex justify-center">
+                <input
+                  type="text"
+                  class="validation-code-input text-direction-ltr bg-transparent border border-solid border-[#c5c7c99a] focus:border-2 focus:border-[#176E77] rounded-lg outline-none font-mediumFanum text-[#c5c7c9] flex items-center justify-center text-center size-10 text-lg md:text-2xl md:size-[60px]"
+                  maxlength="1"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="w-1/6 flex justify-center">
+                <input
+                  type="text"
+                  class="validation-code-input text-direction-ltr bg-transparent border border-solid border-[#c5c7c99a] focus:border-2 focus:border-[#176E77] rounded-lg outline-none font-mediumFanum text-[#c5c7c9] flex items-center justify-center text-center size-10 text-lg md:text-2xl md:size-[60px]"
+                  maxlength="1"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="w-1/6 flex justify-center">
+                <input
+                  type="text"
+                  class="validation-code-input text-direction-ltr bg-transparent border border-solid border-[#c5c7c99a] focus:border-2 focus:border-[#176E77] rounded-lg outline-none font-mediumFanum text-[#c5c7c9] flex items-center justify-center text-center size-10 text-lg md:text-2xl md:size-[60px]"
+                  maxlength="1"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+            <!-- Verification Code Submit Btn -->
+            <button
+              id="verification-input-submit-btn"
+              type="submit"
+              class="text-direction-ltr w-full text-white font-extraboldFanum flex items-center justify-center gap-2 bg-[#444749] my-6 rounded-lg py-3 cursor-not-allowed"
+              disabled
+            >
+              <!-- Data Will Load By JS -->
+            </button>
+            <div
+              class="w-full flex justify-center items-start gap-2 flex-col mb-6"
+            >
+              <div>
+                <a
+                  href="#"
+                  class="flex items-center gap-2 text-[#4cd5dc] font-mediumFanum text-sm"
+                >
+                  ویرایش شماره موبایل
+                  <svg class="size-5">
+                    <use href="#arrow-left"></use>
+                  </svg>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="flex items-center gap-2 text-[#4cd5dc] font-mediumFanum text-sm"
+                >
+                  ورود با رمز عبور
+                  <svg class="size-5">
+                    <use href="#arrow-left"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="hidden md:block">
+      <div class="container">
+        <div>
+          <div class="flex justify-between items-center">
+            <div
+              class="flex items-center justify-between gap-8 child:text-[#8f9193] child:font-regularFanum child:text-[13px]"
+            >
+              <a href="#">صفحه اصلی</a>
+              <a href="#">درباره ما</a>
+              <a href="#">تماس با ما</a>
+              <a href="#">سؤال‌های متدوال</a>
+              <a href="#">بلاگ</a>
+            </div>
+            <div class="flex items-center justify-between gap-8">
+              <a href="#" class="size-4">
+                <svg class="size-full"><use href="#instagram-logo"></use></svg>
+              </a>
+              <a href="#" class="size-4">
+                <svg class="size-full"><use href="#linkedin-logo"></use></svg>
+              </a>
+              <a href="#" class="size-4">
+                <svg class="size-full"><use href="#twitter-logo"></use></svg>
+              </a>
+            </div>
+          </div>
+          <hr class="block my-6 bg-[#dfe1e3]" />
+          <div class="flex justify-between items-center">
+            <div>
+              <p class="text-[#8f9193] font-regularFanum text-sm">
+                © کلیه حقوق این وب‌سایت متعلق به فیدیبو می‌باشد
+                <span> </span>
+                ۱۴۰۲-1392
+              </p>
+            </div>
+            <div
+              class="child:text-[#8f9193] child:font-regularFanum child:text-sm"
+            >
+              <a href="#">قوانین و مقررات</a>
+              <span class="px-4">|</span>
+              <a href="#">حریم خصوصی</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/login_validation.js" type="module"></script>
+  </body>
+</html>
