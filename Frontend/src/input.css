@@ -3,29 +3,50 @@
 @tailwind utilities;
 
 @layer base {
+  @import url("./modules/header.css");
+
   @font-face {
     font-family: "regularFanum";
-    src: url("../../files/fonts/fanum/regular-fanum.woff2");
+    src: url("../files/fonts/fanum/regular-fanum.woff2");
   }
 
   @font-face {
     font-family: "mediumFanum";
-    src: url("../../files/fonts/fanum/medium-fanum.woff2");
+    src: url("../files/fonts/fanum/medium-fanum.woff2");
   }
 
   @font-face {
     font-family: "boldFanum";
-    src: url("../../files/fonts/fanum/bold-fanum.woff2");
+    src: url("../files/fonts/fanum/bold-fanum.woff2");
   }
 
   @font-face {
     font-family: "extraboldFanum";
-    src: url("../../files/fonts/fanum/extrabold-fanum.woff2");
+    src: url("../files/fonts/fanum/extrabold-fanum.woff2");
   }
 }
 
 @layer components {
   .text-direction-ltr {
     direction: ltr;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    box-sizing: content-box;
+    background: rgba(255, 255, 255, 0.692);
+    padding: 1rem;
+    color: #191c1e;
+    border-radius: 1rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    --swiper-navigation-size: 24px;
+    --swiper-navigation-sides-offset: 20px;
+  }
+
+  .swiper-pagination {
+    --swiper-pagination-color: #28c4cc;
   }
 }

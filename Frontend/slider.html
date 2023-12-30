@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/modules/slider.css" />
+  </head>
+  <body>
+    <svg class="hidden">
+      <symbol id="arrowleft-icon" viewBox="0 0 20 20" fill="currentColor">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M13.1547 4.27094C13.3988 4.51501 13.3988 4.91074 13.1547 5.15482L8.17684 10.133L13.1547 15.1109C13.3988 15.3549 13.3988 15.7507 13.1547 15.9947C12.9106 16.2388 12.5149 16.2388 12.2708 15.9947L6.85103 10.5749C6.60695 10.3309 6.60695 9.93513 6.85102 9.69105L12.2708 4.27096C12.5149 4.02688 12.9106 4.02687 13.1547 4.27094Z"
+          fill="var(--first-color)"
+        ></path>
+      </symbol>
+    </svg>
+    <!-- Slider Wrapper -->
+    <div class="my-4 select-none">
+      <div id="site-top-slider-wrapper" class="relative">
+        <svg
+          class="box-content p-4 bg-white rounded-lg absolute top-0 bottom-0 my-auto left-2.5 cursor-pointer size-6"
+        >
+          <use href="#arrowleft-icon"></use>
+        </svg>
+        <div
+          id="slider-items-wrapper"
+          class="overflow-x-auto flex w-full child:w-full"
+        >
+          <img src="./files/imgs/main/slider_imgs/01.webp" alt="slider-item" />
+          <img src="./files/imgs/main/slider_imgs/02.webp" alt="slider-item" />
+          <img src="./files/imgs/main/slider_imgs/03.webp" alt="slider-item" />
+          <img src="./files/imgs/main/slider_imgs/04.webp" alt="slider-item" />
+          <img src="./files/imgs/main/slider_imgs/05.webp" alt="slider-item" />
+          <img src="./files/imgs/main/slider_imgs/06.webp" alt="slider-item" />
+          <img src="./files/imgs/main/slider_imgs/07.webp" alt="slider-item" />
+        </div>
+        <svg
+          class="box-content p-4 bg-white rounded-lg absolute top-0 bottom-0 my-auto rotate-180 right-2.5 cursor-pointer size-6"
+        >
+          <use href="#arrowleft-icon"></use>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
