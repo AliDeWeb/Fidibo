@@ -34,7 +34,7 @@ Open http://localhost:3000 and enjoy your development.
 
 ## View Online
 
-You can view the live version of the project by following this [link]().
+You can view the live version of the project by following this [link](https://alideweb.github.io/Fidibo/Frontend/).
 
 ## Team 👨‍💻👨‍💻
 
