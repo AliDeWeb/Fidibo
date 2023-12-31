@@ -39,6 +39,6 @@ You can view the live version of the project by following this [link](https://al
 ## Team 👨‍💻👨‍💻
 
 - **Frontend Developer**: <a href="https://github.com/AliDeWeb">AliDeWeb</a>
-- **Backend Developer**: <a href="#"></a>
+- **Backend Developer**: <a href="https://github.com/mrnobody1384"></a>
 
 Thank you for checking out Fidibo! We’re excited to see what you build with us. 🚀
