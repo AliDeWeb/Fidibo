@@ -60,4 +60,8 @@
   .swiper-pagination {
     --swiper-pagination-color: #28c4cc;
   }
+
+  .site-categories-slider::-webkit-scrollbar {
+    display: none;
+  }
 }

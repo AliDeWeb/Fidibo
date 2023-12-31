@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const siteBannersSwiper = new Swiper(".site-banners-swiper", {
   loop: true,
 
   pagination: {
