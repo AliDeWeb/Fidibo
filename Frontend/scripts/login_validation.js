@@ -10,7 +10,9 @@ window.addEventListener(`load`, () => {
   });
 
   const userPhoneNumberSelector = document.querySelector(`#user-phone-number`);
-  userPhoneNumberSelector.innerHTML = getSearchURL(`ph`);
+  userPhoneNumberSelector.innerHTML = getSearchURL(`ph`)
+    ? getSearchURL(`ph`)
+    : getSearchURL(`em`);
 
   const progressLine = document.querySelector(`#progress-line`);
   const verificationInputSubmitBtn = document.querySelector(
