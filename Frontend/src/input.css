@@ -79,4 +79,23 @@
   .site-categories-slider::-webkit-scrollbar-thumb:active {
     background-color: #1a9ea5;
   }
+
+  .site-turn-page-slider {
+    user-select: none;
+  }
+
+  .site-turn-page-slider::-webkit-scrollbar {
+    height: 0.7vh;
+  }
+
+  .site-turn-page-slider::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  .site-turn-page-slider::-webkit-scrollbar-thumb {
+    background-color: #28c4cc;
+    border-radius: 4px;
+  }
+  .site-turn-page-slider::-webkit-scrollbar-thumb:active {
+    background-color: #1a9ea5;
+  }
 }
