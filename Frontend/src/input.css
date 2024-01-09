@@ -27,7 +27,7 @@
 }
 
 @layer components {
-  .text-direction-ltr {
+  /* .text-direction-ltr {
     direction: ltr;
   }
 
@@ -97,5 +97,19 @@
   }
   .site-turn-page-slider::-webkit-scrollbar-thumb:active {
     background-color: #1a9ea5;
+  } */
+
+  ::-webkit-scrollbar {
+    width: 0.4vw;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #00000000;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #c5c7c9;
+    border-radius: 4px;
   }
 }

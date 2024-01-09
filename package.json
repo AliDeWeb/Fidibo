@@ -3,6 +3,6 @@
     "tailwindcss": "^3.4.0"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./Frontend/src/input.css -o ./Frontend/styles/main.css --watch"
+    "build": "npx tailwindcss -i ./Frontend/src/input.css -o ./Frontend/styles/modules/scroll-bar.css --watch"
   }
 }
