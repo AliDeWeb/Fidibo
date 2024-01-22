@@ -27,77 +27,9 @@
 }
 
 @layer components {
-  /* .text-direction-ltr {
+  .text-direction-ltr {
     direction: ltr;
   }
-
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    box-sizing: content-box;
-    background: rgba(255, 255, 255, 0.692);
-    padding: 1rem;
-    color: #191c1e;
-    border-radius: 1rem;
-  }
-
-  @media screen and (max-width: 768px) {
-    .swiper-button-next,
-    .swiper-button-prev {
-      display: none;
-    }
-
-    .swiper-pagination {
-      display: none;
-    }
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    --swiper-navigation-size: 24px;
-    --swiper-navigation-sides-offset: 20px;
-  }
-
-  .swiper-pagination {
-    --swiper-pagination-color: #28c4cc;
-  }
-
-  .site-categories-slider {
-    user-select: none;
-  }
-
-  .site-categories-slider::-webkit-scrollbar {
-    height: 0.7vh;
-  }
-
-  .site-categories-slider::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-  .site-categories-slider::-webkit-scrollbar-thumb {
-    background-color: #28c4cc;
-    border-radius: 4px;
-  }
-  .site-categories-slider::-webkit-scrollbar-thumb:active {
-    background-color: #1a9ea5;
-  }
-
-  .site-turn-page-slider {
-    user-select: none;
-  }
-
-  .site-turn-page-slider::-webkit-scrollbar {
-    height: 0.7vh;
-  }
-
-  .site-turn-page-slider::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-  .site-turn-page-slider::-webkit-scrollbar-thumb {
-    background-color: #28c4cc;
-    border-radius: 4px;
-  }
-  .site-turn-page-slider::-webkit-scrollbar-thumb:active {
-    background-color: #1a9ea5;
-  } */
 
   ::-webkit-scrollbar {
     width: 0.4vw;
@@ -111,5 +43,10 @@
   ::-webkit-scrollbar-thumb {
     background-color: #c5c7c9;
     border-radius: 4px;
+  }
+
+  .banner-img-wrapper {
+    display: block;
+    min-height: 217px;
   }
 }

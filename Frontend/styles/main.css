@@ -608,78 +608,6 @@ video {
   }
 }
 
-/* .text-direction-ltr {
-    direction: ltr;
-  }
-
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    box-sizing: content-box;
-    background: rgba(255, 255, 255, 0.692);
-    padding: 1rem;
-    color: #191c1e;
-    border-radius: 1rem;
-  }
-
-  @media screen and (max-width: 768px) {
-    .swiper-button-next,
-    .swiper-button-prev {
-      display: none;
-    }
-
-    .swiper-pagination {
-      display: none;
-    }
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    --swiper-navigation-size: 24px;
-    --swiper-navigation-sides-offset: 20px;
-  }
-
-  .swiper-pagination {
-    --swiper-pagination-color: #28c4cc;
-  }
-
-  .site-categories-slider {
-    user-select: none;
-  }
-
-  .site-categories-slider::-webkit-scrollbar {
-    height: 0.7vh;
-  }
-
-  .site-categories-slider::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-  .site-categories-slider::-webkit-scrollbar-thumb {
-    background-color: #28c4cc;
-    border-radius: 4px;
-  }
-  .site-categories-slider::-webkit-scrollbar-thumb:active {
-    background-color: #1a9ea5;
-  }
-
-  .site-turn-page-slider {
-    user-select: none;
-  }
-
-  .site-turn-page-slider::-webkit-scrollbar {
-    height: 0.7vh;
-  }
-
-  .site-turn-page-slider::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-  .site-turn-page-slider::-webkit-scrollbar-thumb {
-    background-color: #28c4cc;
-    border-radius: 4px;
-  }
-  .site-turn-page-slider::-webkit-scrollbar-thumb:active {
-    background-color: #1a9ea5;
-  } */
-
 ::-webkit-scrollbar {
   width: 0.4vw;
 }
@@ -694,17 +622,14 @@ video {
   border-radius: 4px;
 }
 
+.banner-img-wrapper {
+  display: block;
+  min-height: 217px;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
 }
 
 .ml-2 {
@@ -717,10 +642,6 @@ video {
 
 .box-content {
   box-sizing: content-box;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 .flex {
@@ -751,14 +672,6 @@ video {
   height: 100%;
 }
 
-.h-0 {
-  height: 0px;
-}
-
-.h-0\.5 {
-  height: 0.125rem;
-}
-
 .h-12 {
   height: 3rem;
 }
@@ -771,16 +684,8 @@ video {
   height: 32.5px;
 }
 
-.max-h-\[160px\] {
-  max-height: 160px;
-}
-
 .max-h-\[82px\] {
   max-height: 82px;
-}
-
-.min-h-\[160px\] {
-  min-height: 160px;
 }
 
 .min-h-\[82px\] {
@@ -795,16 +700,8 @@ video {
   width: 103px;
 }
 
-.min-w-\[280px\] {
-  min-width: 280px;
-}
-
 .min-w-\[80px\] {
   min-width: 80px;
-}
-
-.max-w-\[280px\] {
-  max-width: 280px;
 }
 
 .max-w-\[80px\] {
@@ -821,10 +718,6 @@ video {
 
 .flex-col {
   flex-direction: column;
-}
-
-.flex-nowrap {
-  flex-wrap: nowrap;
 }
 
 .items-center {
@@ -859,16 +752,8 @@ video {
   gap: 0.75rem;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-6 {
   gap: 1.5rem;
-}
-
-.overflow-x-auto {
-  overflow-x: auto;
 }
 
 .rounded-lg {
@@ -899,11 +784,6 @@ video {
 .border-\[\#dfe1e3\] {
   --tw-border-opacity: 1;
   border-color: rgb(223 225 227 / var(--tw-border-opacity));
-}
-
-.bg-\[\#dfe1e3\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(223 225 227 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#f5f6f8\] {
@@ -959,10 +839,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
 .pr-4 {
   padding-right: 1rem;
 }
@@ -975,17 +851,8 @@ video {
   font-family: boldFanum;
 }
 
-.font-extraboldFanum {
-  font-family: extraboldFanum;
-}
-
 .font-mediumFanum {
   font-family: mediumFanum;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -1023,24 +890,6 @@ video {
   outline-offset: 2px;
 }
 
-@media (min-width: 640px) {
-  .sm\:max-h-\[213px\] {
-    max-height: 213px;
-  }
-
-  .sm\:min-h-\[213px\] {
-    min-height: 213px;
-  }
-
-  .sm\:min-w-\[374px\] {
-    min-width: 374px;
-  }
-
-  .sm\:max-w-\[374px\] {
-    max-width: 374px;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:block {
     display: block;
@@ -1054,28 +903,12 @@ video {
     display: none;
   }
 
-  .md\:max-h-\[218px\] {
-    max-height: 218px;
-  }
-
-  .md\:min-h-\[218px\] {
-    min-height: 218px;
-  }
-
   .md\:min-w-\[135px\] {
     min-width: 135px;
   }
 
-  .md\:min-w-\[600px\] {
-    min-width: 600px;
-  }
-
   .md\:max-w-\[135px\] {
     max-width: 135px;
-  }
-
-  .md\:max-w-\[600px\] {
-    max-width: 600px;
   }
 
   .md\:flex-row {
