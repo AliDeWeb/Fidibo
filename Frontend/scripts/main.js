@@ -20,7 +20,6 @@ new Swiper(".site-banners-swiper", {
 new Swiper(".categories-swiper", {
   slidesPerView: 3,
   freeMode: true,
- 
 
   breakpoints: {
     480: {
